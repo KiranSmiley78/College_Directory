@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Student Profile</title>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    <div>
+        <img th:src="${profile.photo}" alt="Profile Photo" />
+        <h2 th:text="${profile.name}"></h2>
+        <p>Email: <span th:text="${profile.email}"></span></p>
+        <p>Phone: <span th:text="${profile.phone}"></span></p>
+        <h3>Courses</h3>
+        <ul>
+            <!-- List courses -->
+        </ul>
+    </div>
+</body>
+</html>
